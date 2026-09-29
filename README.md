@@ -37,11 +37,11 @@ The system manages student records, service requests, recent actions, and campus
 
 Main.java, system integration, testing, and documentation
 
-### Person 2
+### A.F.Asrifa 23DA2-1046
 
 Student.java and StudentLinkedList.java
 
-### Person 3
+### H.H.Hafsa 23DA2-0904
 
 StudentBST.java and StudentHashTable.java
 
