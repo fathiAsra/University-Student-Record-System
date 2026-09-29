@@ -16,7 +16,6 @@ public class CampusGraph {
         }
 
         graph.put(location, new ArrayList<>());
-
         return true;
     }
 
@@ -41,7 +40,6 @@ public class CampusGraph {
 
         if (!graph.containsKey(location1)
                 || !graph.containsKey(location2)) {
-
             return false;
         }
 
@@ -56,13 +54,10 @@ public class CampusGraph {
     }
 
     // Remove connection
-    public boolean removeConnection(
-            String location1,
-            String location2) {
+    public boolean removeConnection(String location1, String location2) {
 
         if (!graph.containsKey(location1)
                 || !graph.containsKey(location2)) {
-
             return false;
         }
 
@@ -87,7 +82,8 @@ public class CampusGraph {
 
             System.out.println(
                     location + " -> "
-                    + graph.get(location));
+                    + graph.get(location)
+            );
         }
     }
 
@@ -95,15 +91,13 @@ public class CampusGraph {
     public void bfs(String start) {
 
         if (!graph.containsKey(start)) {
-
             System.out.println("Location not found.");
             return;
         }
 
         Set<String> visited = new HashSet<>();
 
-        java.util.Queue<String> queue =
-                new LinkedList<>();
+        Queue<String> queue = new LinkedList<>();
 
         queue.add(start);
         visited.add(start);
